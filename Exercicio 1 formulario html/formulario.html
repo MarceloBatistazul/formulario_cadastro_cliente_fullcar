@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h2>Formulario de cadastro de clientes</h2>
+    <hr/>
+
+    <form action="" method="post" enctype="multipart/form-data">
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label>Nome</label>
+        <input type="text" name="Nome" id="Nome" />
+        <label>E-mail</label>
+        <input type="text" name="E-mail" id="E-mail" />
+        <label>Senha</label>
+        <input type="password" name="Senha" id="Senha" required /></br>
+        <label>Sexo</label>
+        <input type="radio" name="genero" id="Masculino" value="M" />Masculino
+        <input type="radio" name="genero" id="feminino" value="F" />feminino
+    </fieldset>
+
+    <fieldset>
+        <legend>Endereço</legend>
+        <label>CEP</label>
+        <input type="text" name="CEP" id="CEP" required />
+        <label>Logradouro</label>
+        <input type="text" name="Logradouro" id="Logradouro" />
+        <label>Numero</label>
+        <input type="number" name="Numero" id="Number" /><br/>
+        <label>Completo</label>
+        <input type="text" name="Complemento" id="Complemento" />
+    </fieldset>
+
+    <fieldset>
+        <legend>Dados financeiros</legend>
+        <label>Tipo</label>
+        <input type="radio" name="Cartao" id="Nacional" value="Nacional" />Nacional
+        <input type="radio" name="Cartao" id="Internacional" value="Internacional" />Internacional Bandeira
+        <label>Bandeira</label>
+        <select name="Bandeira" id="Bandeira">
+            <option value="Master-Card">Master-Card</option>
+            <option value="Master-Card-Gold">Master-Card-Gold</option>
+            <option value="Master-Card-Platina">Master-Card-Platina</option>
+            <option value="Master-Card-Black">Master-Card-Black</option>
+            <option value="Visa">Visa</option>
+            <option value="Visa-Internacional">Visa-Internacional</option>
+            <option value="Visa-Black">Visa-Black</option>
+            <option value="Visa-Gold">Visa-Gold</option>
+            <option value="Visa-Platina">Visa-Platina</option>
+        </select>
+        <label>Número do cartão:</label>
+        <input type="number" name="numero do cartão" id="numero do cartão" required /><br/>
+        <label>Validade</label>
+        <input type="month" name="Validade" id="Validade" required /> 
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+    </fieldset>
+</body>
+</html>
